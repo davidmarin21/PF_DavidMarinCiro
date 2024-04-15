@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import "utilidades/form";
+@import "utilidades/variables";
+@import 'utilidades/mixing';
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+//estilos header
+header{
+ .navbar{
+    text-align: center;
+    .navdm{
+    flex-direction: row-reverse;
+
+        }
+    }
+}
+
+.navbar{  
+.logo{
+    img{
+        width: 150px; 
+        height:auto;
+        
+    }
+}
+}
+
+//estilos generales
+
+.btn {            
+    background-color: $color-primario;
+    color: $color-tercero;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: $color-segundario;
+    color: $color-tercero;
+  }
+
+ footer{
+    text-align: center;
+   
+}
+
+//estilo main celular
+@media only screen and (max-width: 600px){
+
+    main{        
+        padding: 10px 10px;
+        overflow: hidden;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        justify-content: center;      
+    
+    }
+
+    .caja-contenedora{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.2);
+        overflow: hidden;
+        align-items: center;
+      
+    }
+
+    .sectionbg{
+       
+        background-color:$color-cuarto;
+        margin: 40px 0;
+        padding: 40px 20px;
+        align-items: center;
+        justify-content: center;
+        
+        .caja6{
+            padding: 0 90px;
+           
+    
+        }
+        .caja7{
+            padding: 0 30px;
+            img{
+                .imagen_grafico{
+                width: 100%;
+                height: auto;
+                padding: 80px 30px;
+                object-fit: contain;
+            }
+        }
+        }
+    } 
+
+    footer{
+        h5{
+            padding-top: 10px;
+        }
+    }
+}
+
+//estilo main celular
+@media only screen and (min-width: 750px){
+
+    main{        
+        @include grid;    
+    
+    }
+
+    .caja-contenedora{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.2);
+        overflow: hidden;
+        align-items: center;
+      
+    }
+
+    .caja4{
+        width:100%;
+        height: auto;
+        grid-column: 2/7;
+        margin: 10px 0;
+        
+        img{
+            width: 100%;
+            height: auto;
+           }
+           h2{
+            padding: 10px 20px;
+           }
+           p{
+            padding: 0 20px;
+           }
+           
+            .btn{
+                margin: 0 20px 20px;
+            }
+           
+    }
+    
+    .caja5{
+        width: 100%;
+        height: auto;
+        grid-column: 7/12;
+        margin: 30px 0;
+          
+        img{
+            width: 100%;
+            height: auto;  
+            
+        }
+       
+        h2{
+            padding: 10px 20px;
+           }
+           p{
+            padding: 0 20px;
+           }
+           
+            .btn{
+                margin: 0 20px 20px;
+            }
+    }   
+
+
+        .caja6{
+            padding: 0 90px;
+           
+    
+        }
+        .caja7{
+            padding: 0 30px;
+            img{
+                .imagen_grafico{
+                width: 100%;
+                height: auto;
+                padding: 80px 30px;
+                object-fit: cover;
+            }
+        }
+        
+    } 
+
+    footer{
+        h5{
+            padding-top: 10px;
+        }
+    }
+}
+
+    
+    
+
+
+//estilo main laptop
+
+
+
+@media only screen and (min-width: 900px){
+
+ main{
+
+        @include grid;       
+    
+    }
+
+    
+
+}
+
+.caja-contenedora{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+    align-items: center;
+
+}
+
+ .caja1{ 
+    grid-column: 2/7;
+   
+    }
+
+    .caja2{
+    grid-column: 7/13;
+    margin-top: 30px;
+   
+    
+}
+
+.caja3{
+    grid-column: 1/13;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     margin-top: 30px;
+    padding: 20px;
+}
+
+.caja4{
+    width:100%;
+    height: auto;
+    grid-column: 2/7;
+    margin: 10px 0;
+    
+    img{
+        width: 100%;
+        height: 280px;
+       }
+       h2{
+        padding: 10px 20px;
+       }
+       p{
+        padding: 0 20px;
+       }
+       
+        .btn{
+            margin: 0 20px 20px;
+        }
+       
+}
+
+.caja5{
+    width: 100%;
+    height: auto;
+    grid-column: 7/12;
+    margin: 30px 0;
+      
+    img{
+        width: 100%;
+        height: 280px;  
+        
+    }
+   
+    h2{
+        padding: 10px 20px;
+       }
+       p{
+        padding: 0 20px;
+       }
+       
+        .btn{
+            margin: 0 20px 20px;
+        }
+}
+
+.caja6 {
+    width: 100%;
+    height: auto;
+    grid-column: 1/7;
+    margin: 30px 0;
+    h2{
+        margin-bottom: 20px;
+    }
+   
+    
+}
+
+.caja7 {
+    width: 100%;
+    height: auto;
+    grid-column: 7/13;
+ 
+    
+}
+
+.sectionbg{
+    grid-column: 1/13;
+    display: flex;
+    background-color:$color-cuarto;
+    margin: 40px 0;
+    padding: 40px 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .caja6{
+        padding: 0 90px;
+       
+
+    }
+    .caja7{
+        padding: 0 30px;
+        img{
+            .imagen_grafico{
+            width: 70%;
+            height: auto;
+            padding: 80px 30px;
+            object-fit: contain;
+        }
+    }
+    }
+} 
+
+.caja8{
+    grid-column: 1/13;
+}
+
+
+
+footer{
+    grid-column: 1/13;
+    background-color: #333;
+    color: white;
+    h5{
+        margin-top: 20px;
+    }
+    img{
+        width: 100px;
+        height: auto;
+        margin: 20px 0;
+
+    }
+}

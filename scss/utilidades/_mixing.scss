@@ -1,0 +1,12 @@
+@mixin grid {
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: auto;
+    gap: 20px;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;      
+}
