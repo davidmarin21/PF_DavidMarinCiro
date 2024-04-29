@@ -24,10 +24,58 @@ img{
 header{
  .navbar{
     text-align: center;
+    background-color: #333;
+    color: white;
+    
     .navdm{
     flex-direction: row-reverse;
-
+        a{
+            color: white;
         }
+        }
+    }
+}
+
+header{
+    .navbar{
+       text-align: center;
+       background-color: #333;
+       color: white;
+       
+       .navdm{
+       flex-direction: row-reverse;
+           a:hover{
+              background-color: white;
+              color: #333;
+           }
+           }
+       }
+   }
+
+.navdm{
+    .navbar-nav{
+        .nav-item{
+            .active{
+                color:white;
+            }
+        }
+    }
+}
+
+.navdm{
+    .navbar-nav{
+        .nav-item{
+            .active:hover{
+               background-color:white;
+               color: #333;
+            }
+        }
+    }
+}
+
+.navbar{
+    .navbar-toggler-icon {
+        background-color: white;
     }
 }
 
@@ -40,6 +88,11 @@ header{
     }
 }
 }
+
+.navbar-toggler{
+    color: white;
+}
+
 
 //estilos generales
 
@@ -115,6 +168,7 @@ header{
         h5{
             padding-top: 10px;
         }
+       
     }
 }
 
@@ -372,5 +426,8 @@ footer{
         height: auto;
         margin: 20px 0;
 
+    }
+    a{
+        color: white;
     }
 }

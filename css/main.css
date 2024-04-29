@@ -54,9 +54,40 @@ img {
 
 header .navbar {
   text-align: center;
+  background-color: #333;
+  color: white;
 }
 header .navbar .navdm {
   flex-direction: row-reverse;
+}
+header .navbar .navdm a {
+  color: white;
+}
+
+header .navbar {
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+header .navbar .navdm {
+  flex-direction: row-reverse;
+}
+header .navbar .navdm a:hover {
+  background-color: white;
+  color: #333;
+}
+
+.navdm .navbar-nav .nav-item .active {
+  color: white;
+}
+
+.navdm .navbar-nav .nav-item .active:hover {
+  background-color: white;
+  color: #333;
+}
+
+.navbar .navbar-toggler-icon {
+  background-color: white;
 }
 
 .navbar .logo img {
@@ -64,8 +95,12 @@ header .navbar .navdm {
   height: auto;
 }
 
+.navbar-toggler {
+  color: white;
+}
+
 .btn {
-  background-color: #000;
+  background-color: #333;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -331,6 +366,9 @@ footer img {
   width: 100px;
   height: auto;
   margin: 20px 0;
+}
+footer a {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
